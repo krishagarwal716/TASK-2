@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+        <script src="https://kit.fontawesome.com/8c43ba49d3.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>TO DO LIST</h2>
+            <form>
+                <input type="text" placeholder="Enter your Task" maxlength="26" class="task-input">
+                <button class="add-button"><i class="fa-solid fa-circle-plus"></i></button>
+            </form>
+            <div class="select">
+                <select name="todos" class="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncomplete">Incomplete</option>
+                </select>
+            </div>
+            <div class="inner">
+                <ul class="todo-list"></ul>
+            </div>
+            <h3>Number of tasks: 0</h3>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
